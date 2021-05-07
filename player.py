@@ -7,6 +7,9 @@ FINISH_LINE_Y = 270
 class Player(Turtle):
     def __init__(self):
         super().__init__()
+        self.reset_player()
+
+    def reset_player(self):
         self.shape("turtle")
         self.penup()
         self.goto(STARTING_POSITION)
